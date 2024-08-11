@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.9 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -567,8 +567,12 @@ video {
   margin-right: auto;
 }
 
-.-mt-3{
-  margin-top: -0.75rem;
+.ms-5{
+  margin-inline-start: 1.25rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .mt-16{
@@ -579,12 +583,12 @@ video {
   margin-top: 6rem;
 }
 
-.flex{
-  display: flex;
+.mt-5{
+  margin-top: 1.25rem;
 }
 
-.h-\[1000px\]{
-  height: 1000px;
+.flex{
+  display: flex;
 }
 
 .h-\[700px\]{
@@ -607,8 +611,8 @@ video {
   max-width: 80rem;
 }
 
-.list-inside{
-  list-style-position: inside;
+.list-outside{
+  list-style-position: outside;
 }
 
 .list-disc{
@@ -631,20 +635,12 @@ video {
   justify-content: center;
 }
 
-.gap-2{
-  gap: 0.5rem;
-}
-
 .gap-3{
   gap: 0.75rem;
 }
 
 .gap-y-5{
   row-gap: 1.25rem;
-}
-
-.rounded-sm{
-  border-radius: 0.125rem;
 }
 
 .rounded-xl{
@@ -707,6 +703,11 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .text-center{

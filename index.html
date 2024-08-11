@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./output.css" rel="stylesheet" />
+		<title>
+			Keamanan Jaringan Komputer | Tugas Kuliah Sistem Terdistribusi
+		</title>
+	</head>
+
+	<body class="bg-slate-200 text-slate-800">
+		<header class="bg-slate-50 py-4">
+			<div>
+				<h1
+					class="topbar-title max-w-7xl mx-auto xl:px-5 lg:px-10 px-8 text-xl text-center md:text-left"
+				>
+					Bangsile's Page
+				</h1>
+			</div>
+		</header>
+		<main>
+			<div
+				style="background-image: url('./public/assets/img/hero.jpg')"
+				class="h-[700px] w-full bg-cover bg-center"
+			>
+				<div class="relative h-full w-full bg-gradient-to-t from-slate-900/70">
+					<div
+						class="flex items-end justify-center md:justify-start h-full max-w-7xl mx-auto xl:px-5 lg:px-10 px-8 py-10 lg:text-5xl text-4xl font-bold text-slate-100 [text-shadow:_3px_3px_1px_rgb(0_0_0_/_100%)]"
+					>
+						<h1>KEAMANAN JARINGAN KOMPUTER</h1>
+					</div>
+				</div>
+			</div>
+			<section class="max-w-7xl mx-auto xl:px-5 lg:px-10 px-8 py-10 text-sm">
+				<h2 class="text-slate-700">Agustus 2024</h2>
+				<h2>by <strong>Asil Taufiqurrahman</strong></h2>
+			</section>
+			<article class="max-w-5xl mx-auto xl:px-5 lg:px-10 px-8 py-10">
+				<h1 class="font-semibold text-4 text-4xl">
+					Keamanan Jaringan Komputer
+				</h1>
+
+				<p class="text-justify mt-5">
+					Keamanan jaringan komputer tidak terdiri dari satu aspek, tetapi
+					mengandung empat tautan penting: perangkat lunak, perangkat keras
+					jaringan, layanan Internet of Things, dan sumber daya bersama. Menurut
+					definisi komputer keamanan jaringan oleh Organisasi Internasional
+					untuk Standardisasi, keamanan jaringan komputer mengacu pada
+					perlindungan perangkat keras, perangkat lunak, dan sumber daya data
+					dalam sistem komputer agar tidak dihancurkan, diubah atau bocor karena
+					alasan kecelakaan atau berbahaya, sehingga sistem komputer terus
+					beroperasi dengan handal, serta layanan komputerjuga teratur.
+				</p>
+				<section class="flex flex-col gap-y-5 py-10">
+					<h2 class="text-2xl font-semibold">Sejarah</h2>
+					<p class="text-justify">
+						Sejarah jaringan komputer bermula dari lahirnya konsep jaringan
+						komputer pada tahun 1940-an di Amerika yang digagas oleh sebuah
+						proyek pengembangan komputer MODEL I di laboratorium Bell dan group
+						riset Universitas Harvard yang dipimpin profesor Howard Aiken. Pada
+						mulanya proyek tersebut hanyalah ingin memanfaatkan sebuah perangkat
+						komputer yang harus dipakai bersama. Untuk mengerjakan beberapa
+						proses tanpa banyak membuang waktu kosong dibuatlah proses beruntun
+						(<i>Batch Processing</i>), sehingga beberapa program bisa dijalankan
+						dalam sebuah komputer dengan kaidah antrian.
+					</p>
+					<p class="text-justify">
+						Kemudian ditahun 1950-an ketika jenis komputer mulai berkembang
+						sampai terciptanya super komputer, maka sebuah komputer harus
+						melayani beberapa tempat yang tersedia (terminal), untuk itu
+						ditemukan konsep distribusi proses berdasarkan waktu yang dikenal
+						dengan nama TSS (<i>Time Sharing Sistem</i>). Maka untuk pertama
+						kalinya bentuk jaringan (<i>network</i>) komputer diaplikasikan.
+						Pada sistem TSS beberapa terminal terhubung secara seri ke sebuah
+						komputer atau perangkat lainnya yang terhubung dalam suatu jaringan
+						(<i>host</i>) komputer. Dalam proses TSS mulai terlihat perpaduan
+						teknologi komputer dan teknologi telekomunikasi yang pada awalnya
+						berkembang sendiri-sendiri.
+					</p>
+					<p class="text-justify">
+						Departemen Pertahanan Amerika, U.S.
+						<i>Defense Advanced Research Projects Agency</i> (DARPA) memutuskan
+						untuk mengadakan riset yang bertujuan untuk menghubungkan sejumlah
+						komputer sehingga membentuk jaringan organik pada tahun 1969.
+						Program riset ini dikenal dengan nama ARPANET. Pada tahun 1970,
+						sudah lebih dari 10 komputer yang berhasil dihubungkan satu sama
+						lain sehingga mereka bisa saling berkomunikasi dan membentuk sebuah
+						jaringan. Dan pada tahun 1970 itu juga setelah beban pekerjaan
+						bertambah banyak dan harga perangkat komputer besar mulai terasa
+						sangat mahal, maka mulailah digunakan konsep proses distribusi (<i
+							>Distributed Processing</i
+						>). Dalam proses ini beberapa host komputer mengerjakan sebuah
+						pekerjaan besar secara paralel untuk melayani beberapa terminal yang
+						tersambung secara seri disetiap host komputer. Dalam proses
+						distribusi sudah mutlak diperlukan perpaduan yang mendalam antara
+						teknologi komputer dan telekomunikasi, karena selain proses yang
+						harus didistribusikan, semua host komputer wajib melayani
+						terminal-terminalnya dalam satu perintah dari komputer pusat .
+					</p>
+					<h2 class="text-2xl font-semibold">
+						Pengertian Keamanan Jaringan Komputer
+					</h2>
+					<p class="text-justify">
+						Keamanan jaringan komputer adalah praktik dan prosedur yang
+						dilakukan untuk melindungi jaringan komputer dari ancaman dan
+						serangan yang merusak, seperti virus, malware, hacker, dan peretasan
+						data. Tujuan utama dari keamanan jaringan komputer adalah untuk
+						melindungi data sensitif dan informasi rahasia dari kebocoran atau
+						akses yang tidak sah. Keamanan jaringan komputer mencakup sejumlah
+						langkah dan teknologi untuk mencegah, mengidentifikasi, dan merespon
+						ancaman keamanan. Ini meliputi:
+					</p>
+					<ul class="list-outside list-disc ms-5 text-justify">
+						<li>
+							<i><b>Firewall</b></i
+							>: <i>Firewall</i> adalah teknologi yang digunakan untuk memonitor
+							dan memfilter lalu lintas jaringan. <i>Firewall</i> dapat
+							memblokir akses yang tidak sah ke jaringan, mencegah serangan
+							<i>malware</i> dan virus, serta mengidentifikasi aktivitas
+							mencurigakan.
+						</li>
+						<li>
+							<b>Enkripsi data</b>: Enkripsi data adalah proses mengubah data
+							menjadi bentuk yang tidak dapat dibaca atau diakses tanpa izin.
+							Ini membantu melindungi data sensitif dari akses yang tidak sah
+							atau kebocoran.
+						</li>
+						<li>
+							<b>Keamanan fisik</b>: Keamanan fisik meliputi tindakan untuk
+							mencegah akses fisik yang tidak sah ke perangkat jaringan, seperti
+							mengunci ruang server atau memasang sensor gerak dan kamera
+							pengawas.
+						</li>
+						<li>
+							<b>Penyaringan dan deteksi <i>malware</i></b
+							>: Perangkat lunak <i>antivirus</i> dan
+							<i>antispyware</i> digunakan untuk memeriksa dan mencegah infeksi
+							<i>malware</i> pada perangkat jaringan, sementara perangkat lunak
+							deteksi <i>malware</i> digunakan untuk mendeteksi
+							<i>malware</i> yang sudah terinfeksi pada jaringan.
+						</li>
+						<li>
+							<b>Keamanan akses</b>: Keamanan akses melibatkan penerapan
+							tindakan keamanan seperti penggunaan kata sandi yang kuat,
+							autentikasi dua faktor, dan pemeriksaan identitas pengguna untuk
+							memastikan bahwa hanya pengguna yang sah yang memiliki akses ke
+							jaringan.
+						</li>
+						<li>
+							<b>Manajemen <i>patch</i></b
+							>: Manajemen <i>patch</i> melibatkan memperbarui perangkat lunak
+							dan sistem operasi untuk memperbaiki kerentanan keamanan dan
+							memastikan bahwa perangkat jaringan selalu diperbarui dengan versi
+							yang terbaru.
+						</li>
+					</ul>
+
+					<div class="flex flex-col items-center gap-3">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvThdRiQOwSq0Pw9URtF5lxaLqk7rSuvB-pg&s"
+							width="60%"
+							alt="jaringan terpusan dan terdistribusi"
+							class="rounded-xl"
+						/>
+						<p class="text-xs italic text-center">
+							sumber :
+							<a
+								href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvThdRiQOwSq0Pw9URtF5lxaLqk7rSuvB-pg&s"
+								>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvThdRiQOwSq0Pw9URtF5lxaLqk7rSuvB-pg&s</a
+							>
+						</p>
+					</div>
+
+					<p class="text-justify">
+						Keamanan jaringan komputer sangat penting bagi organisasi dan
+						individu yang ingin menjaga keamanan dan privasi data mereka. Dalam
+						dunia digital yang semakin berkembang, keamanan jaringan komputer
+						menjadi semakin penting dan harus diambil serius untuk mencegah
+						kebocoran data dan serangan <i>cyber</i>.
+					</p>
+
+					<h2 class="text-2xl font-semibold">
+						Jenis-Jenis Serangan dalam Keamanan Jaringan
+					</h2>
+
+					<h3 class="font-medium">1. <i>Phising</i></h3>
+					<p class="text-justify">
+						<i>Phising</i> adalah suatu kegiatan yang mempunyai sifat menjebak
+						atau mengancam seseorang dengan cara memancing orang tersebut.
+						Adapun cara memancing orang dengan cara menipu seseorang
+						sampai-sampai orang tersebut secara tidak langsung memberikan semua
+						informasi yang diinginkan oleh penjebak.
+					</p>
+					<h3 class="font-medium">2. Trojan</h3>
+					<p class="text-justify">
+						Trojan adalah suatu program yang sudah diciptakan agar melakukan
+						pengintaian pada komputer. Trojan juga memiliki kemampuan
+						mereplikasi dirinya sendiri pada jaringan internet.
+					</p>
+					<h3 class="font-medium">3. <i>Denial of Service</i></h3>
+					<p class="text-justify">
+						<i>Denial of service</i> adalah serangan siber yang berfungsi untuk
+						melumpuhkan suatu sistem jaringan web.
+					</p>
+					<h3 class="font-medium">4. <i>Man in The Middle</i></h3>
+					<p class="text-justify">
+						<i>Man in the middle </i>adalah suatu kegiatan dimana hacker berada
+						dalam tengah-tengah komunikasi antara dua orang. Dalam komunikasi
+						tersebut hacker bisa mendapatkan atau mencuri informasi yang sangat
+						penting.
+					</p>
+					<h3 class="font-medium">5. <i>Ransomware</i></h3>
+					<p class="text-justify">
+						<i>Ransomware </i> adalah sebuah serangan malware yang biasanya
+						menggunakan metode enkripsi agar bisa menyimpan dan menyembunyikan
+						suatu informasi korban sebagai tahanan. Ransomware ini sering
+						digunakan untuk menyebar ke seluruh jaringan dengan target database
+						dan server file sehingga bisa melumpuhkan sistem dengan instan.
+					</p>
+
+					<h2 class="text-2xl font-semibold">
+						Contoh Kasus dalam Keamanan Jaringan
+					</h2>
+					<h3 class="text-xl font-semibold">
+						1. Pencurian Data Bank Syariah Indonesia (2023)
+					</h3>
+					<p class="text-justify">
+						Kelompok peretas asal Rusia bernama Lockbit mengklaim bahwa
+						melumpuhkan salah satu server Bank Syariah Indonesia (BSI) pada
+						bulan Mei 2023. Kelumpuhan server tersebut membuat aplikasi mobile
+						banking-nya tidak bisa diakses oleh nasabah. Selain itu, BSI juga
+						kehilangan sebanyak 1,5 TB data, termasuk data pribadi nasabah dan
+						karyawan. Kasus ini dikenal sebagai ransomware karena Lockbit
+						meminta sejumlah uang agar data tersebut dikembalikan jika tidak
+						ingin dijual ke dark web.
+					</p>
+					<div class="flex flex-col items-center gap-3">
+						<img
+							src="https://amt-it.com/wp-content/uploads/2023/02/Serangan-Ransomware-BSI.jpg"
+							width="60%"
+							alt="jaringan terpusan dan terdistribusi"
+							class="rounded-xl"
+						/>
+						<p class="text-xs italic text-center">
+							sumber :
+							<a
+								href="https://amt-it.com/wp-content/uploads/2023/02/Serangan-Ransomware-BSI.jpg"
+								>https://amt-it.com/wp-content/uploads/2023/02/Serangan-Ransomware-BSI.jpg</a
+							>
+						</p>
+					</div>
+					<h3 class="text-xl font-semibold">
+						2. Pembobolan Data Kominfo (2022)
+					</h3>
+					<p class="text-justify">
+						Pembobolan data milik Kementerian Komunikasi dan Informatika
+						(Kominfo) merupakan salah satu dari serangkaian kasus cyber crime
+						yang terjadi sepanjang tahun 2022. Bjorka, pelaku serangan tersebut,
+						mencuri data registrasi kartu SIM milik Kominfo. Kasus ini terjadi
+						karena adanya kelemahan dalam sistem keamanan server milik Kominfo.
+					</p>
+					<p class="text-justify">
+						Korban pembobolan data oleh Bjorka umumnya berasal dari
+						perusahaan-perusahaan dalam negeri yang memiliki kelemahan dalam
+						sistem keamanan server mereka.
+					</p>
+					<div class="flex flex-col items-center gap-3">
+						<img
+							src="https://amt-it.com/wp-content/uploads/2023/02/Pembobolan-Data-Oleh-Hacker-Bjorka.png"
+							width="60%"
+							alt="jaringan terpusan dan terdistribusi"
+							class="rounded-xl"
+						/>
+						<p class="text-xs italic text-center">
+							sumber :
+							<a
+								href="https://amt-it.com/wp-content/uploads/2023/02/Pembobolan-Data-Oleh-Hacker-Bjorka.png"
+								>https://amt-it.com/wp-content/uploads/2023/02/Pembobolan-Data-Oleh-Hacker-Bjorka.png</a
+							>
+						</p>
+					</div>
+					<h3 class="text-xl font-semibold">
+						3. Peretasan Website Kejagung RI (2021)
+					</h3>
+					<p class="text-justify">
+						MFW, inisial dari pelaku peretasan website Kejaksaan Agung Republik
+						Indonesia (Kejagung RI) yang terjadi pada tahun 2021 ternyata
+						memiliki alasan yang unik. Remaja yang berasal dari Lahat tersebut
+						mengaku bahwa dia hanya iseng dan ingin mengisi waktu luang dengan
+						meretas website.
+					</p>
+					<p class="text-justify">
+						Akibatnya, website Kejagung RI memiliki tampilan yang berubah, yaitu
+						logo ‘HACKED’ berwarna merah dan kalimat pemberitahuan yang bernada
+						protes. MFW juga berhasil mencuri 3.086.224 data pribadi dan
+						menjualnya ke suatu forum.
+					</p>
+					<div class="flex flex-col items-center gap-3">
+						<img
+							src="https://amt-it.com/wp-content/uploads/2023/02/Perusakan-Data-Kejaksaan-Agung-RI.png"
+							width="60%"
+							alt="jaringan terpusan dan terdistribusi"
+							class="rounded-xl"
+						/>
+						<p class="text-xs italic text-center">
+							sumber :
+							<a
+								href="https://amt-it.com/wp-content/uploads/2023/02/Perusakan-Data-Kejaksaan-Agung-RI.png"
+								>https://amt-it.com/wp-content/uploads/2023/02/Perusakan-Data-Kejaksaan-Agung-RI.png</a
+							>
+						</p>
+					</div>
+					<h3 class="text-xl font-semibold">4. Pencurian Data Polri (2012)</h3>
+					<p class="text-justify">
+						Kasus pencurian data milik Kepolisian Republik Indonesia (Polri)
+						terjadi pada bulan November 2021 oleh seorang peretas dengan
+						username Twitter @son1x666. Hacker tersebut mengklaim telah mencuri
+						28.000 informasi login dan data pribadi. Tidak berhenti sampai di
+						situ, pelaku juga membagikan tiga tautan berisi sampel data yang
+						berasal dari database Polri dan mencakup data pribadi anggotanya.
+					</p>
+					<div class="flex flex-col items-center gap-3">
+						<img
+							src="https://amt-it.com/wp-content/uploads/2023/02/Pencurian-Database-POLRI.jpeg"
+							width="60%"
+							alt="jaringan terpusan dan terdistribusi"
+							class="rounded-xl"
+						/>
+						<p class="text-xs italic text-center">
+							sumber :
+							<a
+								href="https://amt-it.com/wp-content/uploads/2023/02/Pencurian-Database-POLRI.jpeg"
+								>https://amt-it.com/wp-content/uploads/2023/02/Pencurian-Database-POLRI.jpeg</a
+							>
+						</p>
+					</div>
+
+					<h2 class="text-2xl font-semibold mt-10">
+						Solusi dalam Penyelesaian Masalah Serangan Keamanan Jaringan
+						Komputer
+					</h2>
+					<p class="text-justify">
+						Seperti halnya ada banyak cara untuk menyusup ke dalam jaringan
+						komputer, ada banyak teknik dan strategi berbeda yang bisa digunakan
+						oleh para profesional IT untuk mengamankannya. Beberapa jenis solusi
+						keamanan jaringan yang paling umum meliputi:
+					</p>
+					<ul class="list-outside list-disc ms-5 text-justify">
+						<li>
+							<i><b>Antivirus Software</b></i
+							>: <i>Antivirus Software</i> dapat diinstal pada semua perangkat
+							jaringan untuk memindai program jahat. <i>Software</i> ini harus
+							diperbarui secara teratur untuk memperbaiki masalah atau
+							kerentanan apa pun.
+						</li>
+						<li>
+							<b><i>Encryption</i></b
+							>: <i>Encryption</i> adalah proses pengacakan data hingga tidak
+							dapat dipahami dan hanya pihak yang berwenang yang memiliki kunci
+							(biasanya berupa kunci dekripsi atau kata sandi) yang dapat
+							memecahkannya. Dengan cara ini, meskipun data dicegat atau dilihat
+							oleh pengguna yang tidak berwenang, mereka tidak dapat membacanya.
+							<div class="flex flex-col items-center gap-3 py-5">
+								<img
+									src="https://www.cisco.com/c/en/us/products/security/encryption-explained/jcr:content/Grid/category_atl/layout-category-atl/blade_493679486/bladeContents/quarterhalfquarter_c/QHQ-Half-2/image/image.img.png/1634629747432.png"
+									width="60%"
+									alt="jaringan terpusan dan terdistribusi"
+									class="rounded-xl"
+								/>
+								<p class="text-xs italic text-center">
+									sumber :
+									<a
+										href="https://www.cisco.com/c/en/us/products/security/encryption-explained/jcr:content/Grid/category_atl/layout-category-atl/blade_493679486/bladeContents/quarterhalfquarter_c/QHQ-Half-2/image/image.img.png/1634629747432.png"
+										>https://www.cisco.com/c/en/us/products/security/encryption-explained/jcr:content/Grid/category_atl/layout-category-atl/blade_493679486/bladeContents/quarterhalfquarter_c/QHQ-Half-2/image/image.img.png/1634629747432.png</a
+									>
+								</p>
+							</div>
+						</li>
+						<li>
+							<b><i>Firewalls</i></b
+							>: <i>Firewall</i> adalah program perangkat lunak, perangkat
+							keras, atau kombinasi keduanya yang memblokir lalu lintas yang
+							tidak diinginkan untuk memasuki jaringan. <i>Firewall</i>
+							dapat dikonfigurasikan untuk hanya memblokir lalu lintas yang
+							mencurigakan atau tidak sah, namun tetap mengizinkan akses ke
+							permintaan yang sah.
+						</li>
+						<li>
+							<p>
+								<b><i>Multi-Factor Authentication</i></b
+								>: Autentikasi multi-faktor itu sederhana, pengguna harus
+								menyediakan dua metode identifikasi terpisah untuk masuk ke akun
+								(misalnya, mengetikkan kata sandi dan kemudian mengetikkan kode
+								numerik yang dikirim ke perangkat lain). Pengguna harus
+								memberikan kredensial unik dari dua dari tiga kategori - sesuatu
+								yang Anda ketahui, sesuatu yang Anda miliki, dan sesuatu yang
+								Anda lakukan - agar autentikasi multi-faktor dapat berjalan
+								dengan baik.
+							</p>
+
+							<div class="flex flex-col items-center gap-3 py-5">
+								<img
+									src="https://www.nist.gov/sites/default/files/images/2019/09/25/multifactor-authentificaton.png"
+									width="60%"
+									alt="jaringan terpusan dan terdistribusi"
+									class="rounded-xl"
+								/>
+								<p class="text-xs italic text-center">
+									sumber :
+									<a
+										href="https://www.nist.gov/sites/default/files/images/2019/09/25/multifactor-authentificaton.png"
+										>https://www.nist.gov/sites/default/files/images/2019/09/25/multifactor-authentificaton.png</a
+									>
+								</p>
+							</div>
+						</li>
+						<li>
+							<b><i>Network Segmentation</i></b
+							>: Segmentasi jaringan melibatkan pemecahan jaringan yang lebih
+							besar ke dalam berbagai subjaringan atau segmen. Jika salah satu
+							subjaringan disusupi atau dikompromikan, subjaringan lainnya tidak
+							akan tersentuh karena mereka berdiri sendiri-sendiri.
+							<div class="flex flex-col items-center gap-3 py-5">
+								<img
+									src="https://www.dashlane.com/_next/image?url=https%3A%2F%2Fripleyprd.wpengine.com%2Fwp-content%2Fuploads%2F2024%2F02%2FWhat-is-network-segmentation-1024x788.png&w=2048&q=75"
+									width="60%"
+									alt="jaringan terpusan dan terdistribusi"
+									class="rounded-xl"
+								/>
+								<p class="text-xs italic text-center">
+									sumber :
+									<a
+										href="https://www.dashlane.com/_next/image?url=https%3A%2F%2Fripleyprd.wpengine.com%2Fwp-content%2Fuploads%2F2024%2F02%2FWhat-is-network-segmentation-1024x788.png&w=2048&q=75"
+										>https://www.dashlane.com/_next/image?url=https%3A%2F%2Fripleyprd.wpengine.com%2Fwp-content%2Fuploads%2F2024%2F02%2FWhat-is-network-segmentation-1024x788.png&w=2048&q=75</a
+									>
+								</p>
+							</div>
+						</li>
+					</ul>
+					<p class="text-justify">
+						Satu strategi keamanan tidak akan cukup untuk melindungi jaringan
+						secara penuh dan efektif. Kombinasi dari berbagai teknik yang
+						berbeda akan memastikan bahwa jaringan Anda seaman mungkin dan akan
+						membantu memenuhi kebutuhan unik organisasi Anda.
+					</p>
+
+					<h2 class="text-2xl font-semibold">
+						Tips dan Trik dalam Menjaga Keamanan Jaringan Komputer
+					</h2>
+					<h3 class="font-medium">1. Memasang Anti Virus</h3>
+					<p class="text-justify">
+						Menginstall Anti Virus semacam Smadav di komputer Anda kini sudah
+						menjadi agenda wajib untuk membantu meningkatkan keamanan komputer.
+						Bagi anda pengguna komputer Windows 10 ke atas, tak usah risau
+						dengan pemasangan Anti Virus karena versi Windows ini secara
+						otomatis menyediakan fitur proteksi tanpa repot-repot mengunduhnya
+						sendiri.
+					</p>
+					<h3 class="font-medium">2. Hindari Transaksi Online Sembarangan</h3>
+					<p class="text-justify">
+						Selain sekedar berselancar di internet untuk sekadar mencari
+						informasi atau hiburan, kebanyakan dari penggunaan komputer tak
+						lepas dari yang namanya kegiatan belanja daring. Beragam kemudahan
+						yang bisa diperoleh, membuat masyarakat berbondong-bondong mulai
+						menggandrungi kegiatan jual-beli online ini. Perlu digaris bawahi
+						jika Anda harus tetap waspada saat melakukan pembayaran via online.
+						Selalu pilih marketplace yang jelas kredibilitasnya, serta jangan
+						dengan mudah memberikan informasi data pribadi kepada siapa pun.
+					</p>
+					<h3 class="font-medium">3. Rutin Mengganti Password</h3>
+					<p class="text-justify">
+						Setiap perangkat komputer tentu tidak luput dari fitur keamanan
+						berupa password. Penggunaan fitur ini akan sangat bermanfaat bagi
+						keamanan data dan privasi Anda. Selain itu, sering mengganti
+						password juga turut membantu meminimalisir terjadinya kebocoran data
+						dalam komputer. Sebagai saran yang bermanfaat, gunakanlah kombinasi
+						yang unik pada password Anda agar tidak gampang diketahui orang
+						lain. Plus jangan sampai membagikan password Anda kepada sembarang
+						orang, ya!
+					</p>
+					<h3 class="font-medium">4. Memakai Incognito Mode</h3>
+					<p class="text-justify">
+						Incognito Mode ialah fitur yang ada pada web, fungsinya untuk
+						menonaktifkan cache browsing dan riwayat penelusuran Anda di
+						internet. Adanya fitur ini sangat membantu saat Anda mengakses data
+						penting menggunakan internet, terlebih lagi jika Anda menggunakannya
+						di tempat umum.
+					</p>
+					<h3 class="font-medium">5. Gunakan Firewall</h3>
+					<p class="text-justify">
+						Firewall mempunyai peran untuk mengawasi tiap gerak-gerik data yang
+						keluar-masuk dari maupun ke komputer. Fungsinya adalah untuk
+						memastikan jika file yang masuk merupakan file yang aman, serta file
+						yang keluar bukan berupa file yang diambil secara paksa. Nah, jika
+						terjadi pengiriman data keluar tanpa persetujuan dari pemilik akun,
+						maka secara otomatis firewall akan menghadang proses pengiriman data
+						dan memblokir permohonan file tersebut.
+					</p>
+					<h3 class="font-medium">6. Sering Membackup Data Penting</h3>
+					<p class="text-justify">
+						Di lapangan, pencurian data bukan hanya sekedar menyalin data saja,
+						bahkan terdapat beberapa penemuan kasus sampai penghapusan data
+						juga. Nah, reminder untuk Anda yang kerap bekerja secara daring nih,
+						untuk selalu rutin melakukan backup data agar terhindar dari ancaman
+						merugikan seperti kehilangan data. Anda bisa menggunakan perangkat
+						keras ekstrenal untuk membackup atau bisa juga mengunggah data Anda
+						ke layanan cloud storage, semacam Google Drive, Dropbox, OneDrive,
+						dan lain sebagainya.
+					</p>
+
+					<h3 class="font-medium">7. Abaikan Pesan Spam</h3>
+					<p class="text-justify">
+						Jika Anda mendapati spam di media sosial berupa tautan mencurigakan,
+						sepatutnya Anda abaikan saja. Umumnya, spam ini berisi tawaran
+						hadiah dengan nominal yang fantastis, atau berbagai tawaran-tawaran
+						menggiurkan lainnya yang menyertakan link di dalam pesan spam
+						tersebut. Jika kebetulan Anda menerima pesan ini, jangan pernah Anda
+						mengetuk tautan tersebut, karena bisa jadi tautan yang dibagi
+						merupakan perangkap yang dipasang oleh peretas untuk menjebak Anda.
+					</p>
+				</section>
+
+				<!-- Referensi -->
+				<section class="mt-24">
+					<h4 class="font-semibold">Sumber Referensi Artikel</h4>
+					<ul class="list-outside list-disc px-3">
+						<li>
+							<a
+								href="https://ejournal.unibba.ac.id/index.php/j-sika/article/view/275/2391"
+								class="text-blue-500 font-medium hover:underline"
+								>Keamanan Jaringan Komputer Pada Era Big Data - Jurnal Sistem
+								Informasi J-SISKA Vol.2 No.1</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://it.telkomuniversity.ac.id/pengertian-keamanan-jaringan-komputer-untuk-melindungi-data/"
+								class="text-blue-500 font-medium hover:underline"
+								>Pengertian Keamanan Jaringan Komputer Untuk Melindungi Data -
+								Blog Telkom University</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://books.google.co.id/books?hl=en&lr=&id=UKNyejI7H0IC&oi=fnd&pg=PA1&dq=sejarah+keamanan+jaringan+komputer&ots=qIcQXhG91h&sig=pGv8ImCuyk3L_0a1XvdkwOkG2t4&redir_esc=y#v=onepage&q&f=false"
+								class="text-blue-500 font-medium hover:underline"
+								>Pengantar Jaringan Komputer (Buku)</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://fikes.almaata.ac.id/23-jenis-serangan-cybersecurity/"
+								class="text-blue-500 font-medium hover:underline"
+								>23 Jenis Serangan Cyber Security - FIKES Universitas Alma
+								Ata</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://amt-it.com/blog/kasus-cybercrime-di-indonesia/#Cegah_Hacker_Bersama_Solusi_Keamanan_dari_F5"
+								class="text-blue-500 font-medium hover:underline"
+								>6 Kasus Cybercrime di Indonesia yang Menyerang Server - AMT
+								IT</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.cloudeka.id/id/berita/web-sec/contoh-kasus-cyber-crime/"
+								class="text-blue-500 font-medium hover:underline"
+								>10 Contoh Kasus Cyber Crime yang Bisa Menjadi Pelajaran -
+								cloudeka</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.comptia.org/content/guides/network-security-basics-definition-threats-and-solutions"
+								class="text-blue-500 font-medium hover:underline"
+								>Network Security: What Is It, Why Does It Matter and What Can
+								You Do to Make Networks More Secure? - CompTIA</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.deltadatamandiri.com/post/cara-meningkatkan-keamanan-jaringan-komputer"
+								class="text-blue-500 font-medium hover:underline"
+								>Berikut 7 Cara Meningkatkan Keamanan Jaringan Komputer - deltadata</a
+							>
+						</li>
+					</ul>
+				</section>
+			</article>
+			<footer class="text-center mt-16">
+				<div class="py-3 bg-slate-300 text-sm">
+					&copy; 2024 - Made by Asil Taufiqurrahman
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>
